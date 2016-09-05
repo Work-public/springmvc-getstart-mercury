@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<label>Name</label><input type="text" id="name">
+<p>Get your greeting <a id="liga" href="/greeting?name" onclick="setName()">here</a></p>
+</body>
+<script>
+    function setName() {
+        document.getElementById("liga").href ="/greeting?name=" + document.getElementById("name").value
+    }
+</script>
+</html>
